@@ -209,4 +209,64 @@ footer a {
   color: white;
   text-decoration: none;
 }
+
+/* Buat tampilan lebih responsif di Android */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .header-title {
+    font-size: 32px;
+  }
+
+  .header-button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .form-modal {
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+  }
+
+  .form-save-btn, .delete-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  textarea {
+    font-size: 16px;
+    height: 120px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+
+/* Pastikan tombol mudah ditekan di Android */
+button {
+  touch-action: manipulation;
+}
+
+/* Tambahkan smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 </style>
